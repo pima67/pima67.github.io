@@ -1,14 +1,17 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)),
-    url(img/bg.jpeg);
-    /*background-image: url(img/bg.jpeg);*/
+	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.jpeg) env(safe-area-inset-top);
     background-repeat: no-repeat;
     background-position: center;
 	background-attachment: fixed;
-    background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
 	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: env(safe-area-inset-bottom);
 }
 
 .container {
@@ -80,6 +83,24 @@ body {
 .container {
     max-width: 540px;
   }
+}
+
+@media all and (min-width: 500px) {
+	.desktop {
+		display: flex;
+	}
+	.mobile {
+		display: none;
+	}
+}
+
+@media all and (max-width: 479px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: flex;
+	}
 }
 
 .button-icon-left {
@@ -184,6 +205,42 @@ body {
 	height: 50px;
 }
 
+.green.frontyt {
+	display: block;
+	padding: 12px 22px;
+	border-radius: 30px;
+	font-size: 1.25rem;
+	background-color: #222;
+	color: #00a700;
+	transform: translateY(-6px);
+	width: 100.14px;
+	height: 50px;
+}
+
+.purple.frontyt {
+	display: block;
+	padding: 12px 22px;
+	border-radius: 30px;
+	font-size: 1.25rem;
+	background-color: #222;
+	color: #8b44f7;
+	transform: translateY(-6px);
+	width: 100.14px;
+	height: 50px;
+}
+
+.red.frontyt {
+	display: block;
+	padding: 12px 22px;
+	border-radius: 30px;
+	font-size: 1.25rem;
+	background-color: #222;
+	color: #f02e2e;
+	transform: translateY(-6px);
+	width: 100.14px;
+	height: 50px;
+}
+
 .frontyt:hover#one {
 	color: #00a700;
 }
@@ -213,7 +270,7 @@ body {
 	user-select: none;
 }
 
-.pushableyt:before#one {
+.uno.pushableyt:before {
     content: '';
     background: linear-gradient(90deg, #00a700, #00a700);
     position: absolute;
@@ -230,7 +287,7 @@ body {
     border-radius: 30px;
 }
 
-.pushableyt:before#two {
+.dos.pushableyt:before {
     content: '';
     background: linear-gradient(90deg, #8b44f7, #8b44f7);
     position: absolute;
@@ -247,7 +304,7 @@ body {
     border-radius: 30px;
 }
 
-.pushableyt:before#three {
+.tres.pushableyt:before {
     content: '';
     background: linear-gradient(90deg, #f02e2e, #f02e2e);
     position: absolute;
@@ -263,7 +320,6 @@ body {
     transition: opacity .3s ease-in-out;
     border-radius: 30px;
 }
-
 
 .pushableyt:active:after {
     background: #111;
