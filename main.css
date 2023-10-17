@@ -1,17 +1,23 @@
+@-moz-viewport {width: device-width; scale:1}
+@-ms-viewport {width: device-width; scale:1}
+@-o-viewport {width: device-width; scale:1}
+@-webkit-viewport {width: device-width; scale:1}
+@viewport {width: device-width; scale:1}
+
 html {
 	scroll-behavior: smooth;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-text-size-adjust: 100%;
+	text-size-adjust: 100%;
 }
 
 body {
-	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.jpeg) env(safe-area-inset-top);
-    background-repeat: no-repeat;
-    background-position: center;
+	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.jpeg);
+    	background-repeat: no-repeat;
+    	background-position: center;
 	background-attachment: fixed;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
-	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 .container {
