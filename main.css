@@ -17,11 +17,10 @@ body {
 	display: flex;
 	height: 100vh;
 	height: -webkit-fill-available;
-	padding-top: env(safe-area-inset-top);
 	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.webp);
 	background-color: #000;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -73,14 +72,16 @@ body {
 }
 
 @media (min-width: 1200px) {
-.container {
-    max-width: 1140px;
-  }
+	.container {
+		max-width: 1140px;
+	}
+}
 
 @media (min-width: 992px) {
-.container {
-    max-width: 960px;
-  }
+	.container {
+		max-width: 960px;
+	}
+}
 
 @media (min-width: 768px) {
 .container {
