@@ -17,7 +17,7 @@ html {
 body {
 	display: flex;
 	height: 100vh;
-	height: -webkit-fill-available;
+	padding-top: env(safe-area-inset-top);
 	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.jpeg);
     background-repeat: no-repeat;
     background-position: center;
