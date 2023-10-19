@@ -5,7 +5,6 @@
 @viewport {width: device-width; scale:1}
 
 html {
-	background-color: #000;
 	height: -webkit-fill-available;
 	scroll-behavior: smooth;
 	-moz-text-size-adjust: 100%;
@@ -16,11 +15,11 @@ html {
 
 body {
 	display: flex;
+	height: 100vh;
 	height: -webkit-fill-available;
-	padding-top: env(safe-area-inset-top);
-	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.jpeg);
-	background-repeat: no-repeat;
-	background-position: center;
+	background: linear-gradient(to top, rgba(30,35,38,.3), rgba(30,35,38,0.6)), url(img/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 }
